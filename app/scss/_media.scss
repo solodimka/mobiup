@@ -1,0 +1,146 @@
+@import "vars";
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  body {
+    background-image: none;
+  }
+  .mobile__menu {
+    width: 100%;
+    padding: 0;
+  }
+  .im-menu {
+    color: #01a24f;
+  }
+  .header__diagnostic {
+    display: flex;
+    width: 25%;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+  .header__wrapper {
+    flex-direction: row;
+  }
+  .social {
+    top: 205px;
+  }
+  .repairs {
+    &__items {
+      flex-direction: row;
+      padding: 0 20px;
+    }
+  }
+  .price__title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .arrow__link {
+    right: 50px;
+  }
+  .social {
+    display: block;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .header {
+    &__wrapper {
+      flex-direction: row;
+    }
+    .desktop__menu {
+      display: block;
+    }
+    .mobile__menu {
+      display: none;
+    }
+    &__diagnostic {
+      padding: 21px 22px 21px 18px;
+      max-width: 227px;
+    }
+    &__logo {
+      display: flex;
+    }
+    &__phone {
+      width: auto;
+      margin-bottom: 0;
+      .tel {
+        justify-content: center;
+      }
+    }
+    &__address {
+      .address {
+        width: auto;
+      }
+    }
+
+  }
+  .repairs {
+    &__items {
+      padding: 0 50px;
+    }
+    &__item {
+      margin-bottom: 0;
+    }
+    &__title {
+      margin-top: 56px;
+      font-size: 33px;
+    }
+    &__subtitle {
+      padding: 0 50px;
+      margin-bottom: 63px;
+    }
+  }
+  .price {
+    &__title {
+      font-size: 33px;
+      margin-top: 42px;
+      margin-bottom: 32px;
+    }
+    .tab__body {
+      .service__item {
+        .service__desc {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .social {
+    right: calc((100vw - 900px)/ 2);
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  body {
+    background-image: url(../img/top_right.png), url(../img/bottom_left.png);
+    background-position: top right, left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 115px 440px,120px 230px;
+  }
+  .container {
+    max-width: 970px;
+  }
+  .social {
+    right: calc((100vw - 1000px)/ 2);
+  }
+}
+
+@media only screen and (min-width : 1400px) {
+  body {
+    background-size: 170px 640px, 190px 360px;
+  }
+}
+
+@media only screen and (min-width : 1700px) {
+  body {
+    background-size: 170px 640px, 270px 360px;
+  }
+}
